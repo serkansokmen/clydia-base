@@ -33,12 +33,19 @@ public:
     ofxCvContourFinder  contours;
     
     int w,h;
-    int findHue, findSat, findBri, anchoHue, anchoSat, anchoBri;
+    int findHue;
+    int findSat;
+    int findBri;
+    int anchoHue;
+    int anchoSat;
+    int anchoBri;
     
     // Clydias
     vector<Branch*>	branches;
     ofRectangle     drawRect;
     
-    bool bDrawDiag, bClearCanvas, bDrawVideo;
+    bool bDrawDiag;
+    bool bClearCanvas;
+    bool bDrawVideo;
 };
 
