@@ -1,4 +1,4 @@
-#include "testApp.h"
+#include "App.h"
 
 // Init video related
 int camWidth = 640;
@@ -6,7 +6,7 @@ int camHeight = 480;
 
 
 //--------------------------------------------------------------
-void testApp::setup(){
+void App::setup(){
 
     //------------------------------------------------
 	// Main setup
@@ -48,7 +48,7 @@ void testApp::setup(){
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void App::update(){
     
 #ifndef MOUSE_MODE
 	movie.update();
@@ -133,7 +133,7 @@ void testApp::update(){
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void App::draw(){
 
     //ofBackgroundGradient(ofColor::gray * 0.4, ofColor::gray * 0.2, OF_GRADIENT_CIRCULAR);
     ofSetColor(0, 0, 0, 10);
@@ -198,7 +198,7 @@ void testApp::draw(){
 }
 
 //--------------------------------------------------------------
-void testApp::clearCanvas()
+void App::clearCanvas()
 {
     for (int i=0;i<branches.size();i++)
     {
@@ -213,7 +213,7 @@ void testApp::clearCanvas()
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void App::keyPressed(int key){
     switch (key)
 	{
 		case ' ':
@@ -231,17 +231,17 @@ void testApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void App::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void App::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void App::mouseDragged(int x, int y, int button){
 #ifdef MOUSE_MODE //1
     Branch *branch = new Branch;
     branch->setup(ofVec2f(x, y), drawRect);
@@ -251,7 +251,7 @@ void testApp::mouseDragged(int x, int y, int button){
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void App::mousePressed(int x, int y, int button){
 #ifndef MOUSE_MODE
 	if(x < w && y < h)
     {
@@ -264,17 +264,17 @@ void testApp::mousePressed(int x, int y, int button){
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void App::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
+void App::windowResized(int w, int h){
 
 }
 
 
 //--------------------------------------------------------------
-void testApp::exit(){
+void App::exit(){
     clearCanvas();
 }

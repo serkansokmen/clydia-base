@@ -1,4 +1,4 @@
-Clydia
+clydia
 ======
 
 OpenFrameworks based generative pattern drawer application which uses color input from a camera

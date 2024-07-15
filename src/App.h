@@ -4,10 +4,10 @@
 #include "ofxOpenCv.h"
 #include "Branch.h"
 
-//#define MOUSE_MODE 1
+#define MOUSE_MODE 1
 
 
-class testApp : public ofBaseApp {
+class App : public ofBaseApp {
     
 public:
     
