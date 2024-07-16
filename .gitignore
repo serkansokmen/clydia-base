@@ -32,6 +32,13 @@ xcuserdata
 *.suo
 ipch/
 
+# Rider
+.idea/
+*.sln.iml
+*.csproj.dotSettings.user
+*.sln.DotSettings.user
+*.csproj.user
+
 #Eclipse
 .metadata
 local.properties
