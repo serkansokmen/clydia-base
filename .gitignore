@@ -31,6 +31,8 @@ xcuserdata
 *.opensdf
 *.suo
 ipch/
+.vs/
+bin/
 
 # Rider
 .idea/

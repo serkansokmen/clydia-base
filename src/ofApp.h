@@ -4,10 +4,8 @@
 #include "ofxOpenCv.h"
 #include "Branch.h"
 
-#define MOUSE_MODE 1
 
-
-class App : public ofBaseApp {
+class ofApp : public ofBaseApp {
     
 public:
     
@@ -25,8 +23,6 @@ public:
     void exit();
     
     void clearCanvas();
-    
-    ofVideoGrabber movie;
     
     ofxCvColorImage     rgb, hsb;
     ofxCvGrayscaleImage hue, sat, bri, filtered;
@@ -46,6 +42,5 @@ public:
     
     bool bDrawDiag;
     bool bClearCanvas;
-    bool bDrawVideo;
 };
 
